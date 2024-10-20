@@ -39,6 +39,7 @@ public class SimpleServer {
 
                 new Thread(clientHandler).start();
 
+                serverSocket.close();
 
             }
 
