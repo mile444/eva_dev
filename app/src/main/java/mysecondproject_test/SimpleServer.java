@@ -39,8 +39,11 @@ public class SimpleServer {
 
                 new Thread(clientHandler).start();
 
+                serverSocket.close();
+
 
             }
+
 
         } 
         catch (IOException e) {
